@@ -1,9 +1,9 @@
 'user client';
 
 import {Search} from "lucide-react";
-
 export default function Header() {
     return (
+        <>
             <nav className="sticky top-0 z-50 bg-black-300 shadow bg-gray-800">
                 <div className="w-full max-w-screen-xl mx-auto px-6 flex justify-between items-center py-4">
                     <div className="px-8">
@@ -20,16 +20,14 @@ export default function Header() {
                         />
                     </div>
                     <div className=" flex justify-end gap-4 px-8">
-                        <a href="#" className="hover:underline font-bold text-white  flex items-center gap-1">
-                            Home
-                        </a>
-                        <a href="#" className="hover:underline font-bold text-white">About</a>
                         <a href="#" className="hover:underline font-bold text-white">Phim Lẻ</a>
                         <a href="#" className="hover:underline font-bold text-white">Thể Loại</a>
                         <a href="#" className="hover:underline font-bold text-white">Quốc Gia</a>
                         <a href="#" className="hover:underline font-bold text-white">Năm</a>
+                        <button className="hover:underline font-bold  border rounded bg-gray-800 text-white">Đăng Nhập</button>
                     </div>
                 </div>
             </nav>
+   </>
     );
 }
